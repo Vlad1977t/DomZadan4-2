@@ -13,8 +13,8 @@ for k in range(Size): # перебор индексов
     mas[k] = int(input()) # ввод числа с клавиатуры
 maximum = max(mas)
 
-for i in range(len(mas)-1):
+for i in range(len(mas)):
     if mas[i]==maximum:
-        mas[i+]=0
+        for i in range(i+1,len(mas)): mas[i]=0
 print(mas)
 
